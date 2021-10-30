@@ -26,20 +26,22 @@ class View{
        console.log("row", (row)%7);
        console.log(color);
        if(color ==="red"){
-           cells[cell].style.backgroundImage = "url('https://i.colnect.net/f/838/429/Goldstar.jpg')";;
-           cells[cell].style.backgroundRepeat = "no-repeat";
-           cells[cell].style.backgroundSize = "contain";
-           cells[cell].style.backgroundPosition = "center";
-           cells[cell].style.transform = 'rotate(180deg)';
-           cells[cell].style.backgroundColor = "rgba(0, 0, 255, 1)";
-       }
-       if(color ==="yellow"){
-            cells[cell].style.backgroundImage = "url('https://m.media-amazon.com/images/I/61afkPlegpL._AC_SX466_.jpg')";;
+            document.getElementById("redPlayer").style.backgroundImage = "url(``)";
+            cells[cell].style.backgroundImage = "url('https://i.colnect.net/f/838/429/Goldstar.jpg')";
             cells[cell].style.backgroundRepeat = "no-repeat";
             cells[cell].style.backgroundSize = "contain";
             cells[cell].style.backgroundPosition = "center";
             cells[cell].style.transform = 'rotate(180deg)';
-            cells[cell].style.backgroundColor = "rgba(0, 0, 255, 0)";
+            document.getElementById("yellowPlayer").style.backgroundImage = "url('https://m.media-amazon.com/images/I/61afkPlegpL._AC_SX466_.jpg')";
+       }
+       if(color ==="yellow"){
+            document.getElementById("yellowPlayer").style.backgroundImage = "url(``)";
+            cells[cell].style.backgroundImage = "url('https://m.media-amazon.com/images/I/61afkPlegpL._AC_SX466_.jpg')";
+            cells[cell].style.backgroundRepeat = "no-repeat";
+            cells[cell].style.backgroundSize = "contain";
+            cells[cell].style.backgroundPosition = "center";
+            cells[cell].style.transform = 'rotate(180deg)';
+            document.getElementById("redPlayer").style.backgroundImage = "url('https://i.colnect.net/f/838/429/Goldstar.jpg')";
         }
     }
 
